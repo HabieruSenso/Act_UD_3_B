@@ -21,7 +21,7 @@ class MainAdapter(private val mDataSet: kotlin.collections.List<User>, var onCLi
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val data = mDataSet.get(position)
         holder.bindItems(data)
-
+//cambios
         holder.itemView.setOnClickListener {
             onCLick(data)
         }
